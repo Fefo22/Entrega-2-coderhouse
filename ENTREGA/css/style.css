@@ -4,7 +4,114 @@ body {
     padding: 0;
     overflow-x: hidden;
   }
-  img-ruleta {
+  .ruleta-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .img-ruleta {
     display: block;
-    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .btn-tirar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .agregar-btn {
+    margin-right: 10px;
+  }
+
+  .quitar-btn {
+    margin-left: 10px;
+  }
+  .custom-shadow {
+    box-shadow: 0px 5px 6px rgb(0 0 0 / 70%);
+  }
+
+  .img-ruleta {
+    transition: transform 3s ease-out;
+  }
+  
+  .girando1 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(1080deg);
+  }
+  
+  .girando2 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(22.5deg);
+  }
+  
+  .girando3 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(45deg);
+  }
+  
+  .girando4 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(67.5deg);
+  }
+  
+  .girando5 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(90deg);
+  }
+  
+  .girando6 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(112.5deg);
+  }
+  
+  .girando7 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(135deg);
+  }
+  
+  .girando8 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(157.5deg);
+  }
+  
+  .girando9 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(180deg);
+  }
+  
+  .girando10 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(202.5deg);
+  }
+  
+  .girando11 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(225deg);
+  }
+  
+  .girando12 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(247.5deg);
+  }
+  
+  .girando13 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(270deg);
+  }
+  
+  .girando14 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(292.5deg);
+  }
+  
+  .girando15 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(315deg);
+  }
+
+  .girando16 {
+    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+    transform: rotate(337.5deg);
   }
