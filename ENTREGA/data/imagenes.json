@@ -1,0 +1,16 @@
+{
+    "imagenes": [
+      {
+        "nombre": "imagen1",
+        "url": "../img/fondo1.png"
+      },
+      {
+        "nombre": "imagen2",
+        "url": "../img/fondo2.png"
+      }
+    ]
+  }
+  
+  
+  
+  

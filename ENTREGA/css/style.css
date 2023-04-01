@@ -1,117 +1,166 @@
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  .ruleta-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .img-ruleta {
-    display: block;
-    max-width: 100%;
-  }
-  
-  .btn-tirar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-  .agregar-btn {
-    margin-right: 10px;
-  }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  .quitar-btn {
-    margin-left: 10px;
-  }
-  .custom-shadow {
-    box-shadow: 0px 5px 6px rgb(0 0 0 / 70%);
-  }
+.container-logo {
+  position: relative;
+}
 
-  .img-ruleta {
-    transition: transform 3s ease-out;
-  }
-  
-  .girando1 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(1080deg);
-  }
-  
-  .girando2 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(22.5deg);
-  }
-  
-  .girando3 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(45deg);
-  }
-  
-  .girando4 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(67.5deg);
-  }
-  
-  .girando5 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(90deg);
-  }
-  
-  .girando6 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(112.5deg);
-  }
-  
-  .girando7 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(135deg);
-  }
-  
-  .girando8 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(157.5deg);
-  }
-  
-  .girando9 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(180deg);
-  }
-  
-  .girando10 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(202.5deg);
-  }
-  
-  .girando11 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(225deg);
-  }
-  
-  .girando12 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(247.5deg);
-  }
-  
-  .girando13 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(270deg);
-  }
-  
-  .girando14 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(292.5deg);
-  }
-  
-  .girando15 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(315deg);
-  }
+.img-container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .girando16 {
-    animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
-    transform: rotate(337.5deg);
-  }
+.img-container-logo img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.img-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.ruleta-container {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.img-ruleta {
+  display: block;
+  max-width: 100%;
+}
+
+.btn-tirar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.agregar-btn {
+  margin-right: 10px;
+}
+
+.quitar-btn {
+  margin-left: 10px;
+}
+
+.custom-shadow {
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 70%);
+}
+
+.img-ruleta {
+  transition: transform 3s ease-out;
+}
+
+.girando1 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(1080deg);
+}
+
+.girando2 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(22.5deg);
+}
+
+.girando3 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(45deg);
+}
+
+.girando4 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(67.5deg);
+}
+
+.girando5 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(90deg);
+}
+
+.girando6 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(112.5deg);
+}
+
+.girando7 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(135deg);
+}
+
+.girando8 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(157.5deg);
+}
+
+.girando9 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(180deg);
+}
+
+.girando10 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(202.5deg);
+}
+
+.girando11 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(225deg);
+}
+
+.girando12 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(247.5deg);
+}
+
+.girando13 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(270deg);
+}
+
+.girando14 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(292.5deg);
+}
+
+.girando15 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(315deg);
+}
+
+.girando16 {
+  animation: giro 4s cubic-bezier(0.3, 0.9, 0.4, 0.7) 1;
+  transform: rotate(337.5deg);
+}
+
+.fondo-imagen2 {
+  background: rgba(86, 86, 86, 0.641);
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+
+.participante {
+  color: white;
+}
+
+.selector {
+  position: absolute;
+  margin-top: 3rem;
+  left: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid red;
+}

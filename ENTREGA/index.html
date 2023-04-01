@@ -9,64 +9,74 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css">
 
 <body>
-    <nav class="navbar navbar-dark bg-primary custom-shadow mb-5 mt-2">
+    <nav class="navbar navbar-dark bg-dark custom-shadow mb-5">
         <div class="row ml-5">
             <div>
-                <a class="btn btn-primary text-uppercase font-weight-bold"
-                    href="./index.html"
-                    role="button" aria-disabled="true">resacados</a>
+                <a class="btn btn-dark text-uppercase font-weight-bold" href="./index.html" role="button"
+                    aria-disabled="true">resacados</a>
             </div>
             <div class="">
-                <a class="btn btn-primary text-uppercase"
+                <a class="btn btn-dark text-uppercase"
                     href="https://articulo.mercadolibre.com.ar/MLA-1128426003-resacados-juego-para-previas-_JM"
                     role="button" aria-disabled="true">Comprar</a>
-                <a class="btn btn-primary text-uppercase " href="https://www.instagram.com/resacadosoficial"
-                    role="button" aria-disabled="true">Nosotros</a>
+                <a class="btn btn-dark text-uppercase " href="https://www.instagram.com/resacadosoficial" role="button"
+                    aria-disabled="true">Nosotros</a>
             </div>
         </div>
     </nav>
 
     <div class="col-md-12">
-        <div class="col-12 text-center">
-            <h1 class="">RESACADOS ES UNA RULETA PARA PREVIAS</h1>
-        </div>
-        <div class="m-5">
-            <img src="img/banner2.png" class="card-img-top img-fluid" alt="banner">
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-6 mx-auto mt-5 mb-5">
-                            <div class="ruleta-container">
-                                <button type="button" class="btn btn-tirar btn-danger">
-                                    <span>Tirar</span>
-                                </button>
-                                <img src="img/Ruleta33.png" class="img-fluid img-ruleta" alt="ruleta">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Agregar participante</h3>
-                            <form>
-                                <div class="form-group">
-                                    <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre"
-                                        placeholder="Ingrese el nombre del participante">
-                                </div>
-                                <button type="submit" class="btn btn-primary agregar-btn">Agregar</button>
-                                <button id="quitar" class="btn btn-primary quitar-btn">Quitar</button>
-                            </form>
-
-                            <h3 class="mt-3">Lista de participantes</h3>
-                            <ul class="list-group">
-                            </ul>
-                        </div>
+            <div class="m-5 row">
+                <div class="col-md-6 mx-auto">
+                    <img src="img/dibujos.png" class="card-img-top img-fluid" alt="banner">
+                </div>
+                <div class="container-logo col-md-3 mx-auto pl-5 pr-5">
+                    <div class="img-container-logo w-100">
+                        <img src="img/logo-flechas.png" alt="logo flechas" class="img-fluid w-100">
+                        <img src="img/logo-cabeza.png" alt="logo cabeza" class="img-fluid img-head w-100">
                     </div>
                 </div>
+                <div class="col-md-3 mx-auto">
+                    <img src="img/monalisa.png" class="card-img-top img-fluid" alt="banner">
+                </div>
             </div>
-            <script src="JS/main.js"></script>
-            <!-- <script src="JS/prueba.js"></script> -->
+            <div class="row mb-2" style="background-color: #f2f2f2; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2)">
+                <div class="col-md-6 mx-auto mt-5 mb-5">
+                    <div class="ruleta-container">
+                        <button type="button" class="btn btn-tirar text-uppercase btn-dark btn-lg">
+                            <span>Tirar</span>
+                            <span class="selector"></span>
+                        </button>
+                        <img src="img/Ruleta33.png" class="img-fluid img-ruleta" alt="ruleta">
+                    </div>
+                </div>
+                <div class="col-md-4 fondo-imagen2 mr-5 mt-4 mb-5">
+                    <h3 class="text-uppercase participante">Agregar participante</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre"
+                                placeholder="Ingrese el nombre del participante">
+                        </div>
+                        <button type="submit" class="btn btn-dark agregar-btn">Agregar</button>
+                        <button id="quitar" class="btn btn-dark quitar-btn">Quitar</button>
+                    </form>
+
+                    <h3 class="mt-3 text-uppercase participante">Participantes</h3>
+                    <ul class="ml-3 list-group text-uppercase participante">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="JS/prueba.js"></script> -->
 </body>
+
 </html>
+
+
+   
